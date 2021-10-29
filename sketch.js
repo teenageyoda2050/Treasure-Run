@@ -79,8 +79,8 @@ function draw() {
       if (swordGroup.isTouching(boy)) {
         gameState = END;
 
-        boy.addAnimation(endImg);
-        // boy.addAnimation("SahilRunning",endImg);
+        // boy.addAnimation(endImg);
+        boy.addAnimation("SahilRunning", endImg);
         // boy.addAnimation("SahilRunning");
         // boy.addAnimation(SahilRunning,endImg);
 
@@ -91,21 +91,21 @@ function draw() {
         // cashG.destroyEach;
         // diamondsG.destroyEach;
         // jewelryG.destroyEach;
-        swordGroup.destroyEach;
+        //  swordGroup.destroyEach;
 
-        cashG.destroy();
+        // cashG.destroy();
         // diamondsG.destroy();
         // jewelryG.destroy();
         // swordGroup.destroy();
 
-        // cashG.destroyEach();
+        cashG.destroyEach();
         diamondsG.destroyEach();
-        // jewelryG.destroyEach();
-        // swordGroup.destroyEach();
+        jewelryG.destroyEach();
+        swordGroup.destroyEach();
 
         // cashGdestroyEach();
         // diamondsGdestroyEach();
-        jewelryGdestroyEach();
+        //jewelryGdestroyEach();
         // swordGroupdestroyEach();
 
         cashG.setVelocityYEach(0);
